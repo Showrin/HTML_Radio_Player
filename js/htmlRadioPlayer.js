@@ -4,9 +4,14 @@ $(document).ready(function() {
     var mainPlayer = $('#main-but-hidden-radio-player')[0];
 
 
+
+
+    // ################ Main Code #######################
     radioPlayPauseBtn.click(function() {
         playOrPauseFunction(100);
     });
+
+
 
 
     //################# All Functions ##################### 
@@ -31,6 +36,7 @@ $(document).ready(function() {
 
         } else if(radioPlayPauseBtn.children('span').hasClass('fa-pause')) {
             radioPlayPauseBtn.children('span').css('transform', 'scale(0)');
+            mainPlayer.load();
             mainPlayer.pause();
             setTimeout(function() {
                 radioPlayPauseBtn.children('span').removeClass('fa-pause');

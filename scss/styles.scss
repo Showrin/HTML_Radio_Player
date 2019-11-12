@@ -12,4 +12,9 @@
     border-radius: 50%;
     border: 3px solid #fff;
     cursor: pointer;
+    transition: .1s all ease-in-out;
+
+    span {
+        transition: .1s all ease-in-out;
+    }
 }
